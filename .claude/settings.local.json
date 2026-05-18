@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(mkdir -p \"c:\\\\Users\\\\DELL\\\\Desktop\\\\Claude\\\\KN_swarn\\\\css\" \"c:\\\\Users\\\\DELL\\\\Desktop\\\\Claude\\\\KN_swarn\\\\js\" \"c:\\\\Users\\\\DELL\\\\Desktop\\\\Claude\\\\KN_swarn\\\\projekty\")",
-      "Bash(python -c \"from PIL import Image; print\\('Pillow OK'\\)\")"
+      "Bash(python -c \"from PIL import Image; print\\('Pillow OK'\\)\")",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)"
     ],
     "additionalDirectories": [
       "c:\\Users\\DELL\\Desktop\\Claude\\KN_swarn"
