@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KN SWARM — Robotyka Roju | Politechnika Wrocławska</title>
+  <meta name="description" content="KN SWARM — studenckie koło naukowe zajmujące się robotyką roju na Politechnice Wrocławskiej. Gdzie ilość staje się jakością.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ═══ HEADER ═══ -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="skn_swarm_logo.jpg" alt="KN SWARM" style="mix-blend-mode:screen;">
+        <span class="logo-name">KN <em>SWARM</em></span>
+      </a>
+      <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="o-nas.html">O nas</a>
+        <a href="projekty.html">Projekty</a>
+        <a href="dla-firm.html">Dla firm</a>
+        <a href="kontakt.html" class="nav-cta">Kontakt</a>
+      </nav>
+      <button class="hamburger" aria-label="Otwórz menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mobile-nav">
+    <a href="index.html">Strona główna</a>
+    <a href="o-nas.html">O nas</a>
+    <a href="projekty.html">Projekty</a>
+    <a href="dla-firm.html">Dla firm</a>
+    <a href="kontakt.html">Kontakt</a>
+  </div>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero">
+    <canvas id="swarm-canvas"></canvas>
+    <div class="hero-content">
+      <img src="swarm_logo.png" alt="KN SWARM Logo" class="hero-logo">
+      <div class="hero-badge">Koło Naukowe &middot; Swarm Robotics &middot; PWr</div>
+      <h1>KN <em>SWARM</em></h1>
+      <p class="hero-motto"><strong>Gdzie ilość staje się jakością</strong></p>
+      <div class="hero-btns">
+        <a href="projekty.html" class="btn btn-primary">Nasze projekty &rarr;</a>
+        <a href="o-nas.html"    class="btn btn-outline">Kim jesteśmy</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="arrow"></div>
+      <span>Przewiń</span>
+    </div>
+  </section>
+
+  <!-- ═══ O NAS PREVIEW ═══ -->
+  <section style="padding: 80px 28px;">
+    <div class="container">
+      <div class="split">
+        <div>
+          <span class="sec-tag">Kim jesteśmy</span>
+          <h2 class="sec-title">Inteligencja roju<br>w praktyce</h2>
+          <p class="sec-desc">
+            Witamy w SWARM — kole naukowym, w którym pasja do technologii spotyka się z siłą pracy zespołowej. Inspiruje nas <strong style="color:var(--white)">inteligencja roju</strong>: wierzymy, że współdziałanie jednostek pozwala rozwiązywać problemy, które dla pojedynczego człowieka są nieosiągalne.
+          </p>
+          <br>
+          <a href="o-nas.html" class="btn btn-outline" style="margin-top:8px;">Poznaj nasz zespół &rarr;</a>
+        </div>
+        <div class="mini-grid">
+          <div class="mini-card fade-in d1">
+            <div class="icon">🤖</div>
+            <h3>Swarm Robotics</h3>
+            <p>Systemy wielu robotów działające jako jeden organizm</p>
+          </div>
+          <div class="mini-card fade-in d2">
+            <div class="icon">🧠</div>
+            <h3>AI &amp; Algorytmy</h3>
+            <p>Algorytmy inspirowane naturą: mrówki, pszczoły, ptaki</p>
+          </div>
+          <div class="mini-card fade-in d3">
+            <div class="icon">🔧</div>
+            <h3>Hardware</h3>
+            <p>Projektowanie i budowa miniaturowych robotów rojowych</p>
+          </div>
+          <div class="mini-card fade-in d4">
+            <div class="icon">🎓</div>
+            <h3>Nauka</h3>
+            <p>Konferencje naukowe i prezentacje badań</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ STATS ═══ -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="fade-in">
+        <div class="stat-num">2024</div>
+        <div class="stat-label">Rok założenia</div>
+      </div>
+      <div class="fade-in d1">
+        <div class="stat-num">2</div>
+        <div class="stat-label">Aktywne projekty</div>
+      </div>
+      <div class="fade-in d2">
+        <div class="stat-num">PWr</div>
+        <div class="stat-label">Politechnika Wrocławska</div>
+      </div>
+      <div class="fade-in d3">
+        <div class="stat-num">&infin;</div>
+        <div class="stat-label">Potencjał wzrostu</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ PROJEKTY PREVIEW ═══ -->
+  <section style="padding: 80px 28px; background: rgba(255,215,0,0.015);">
+    <div class="container">
+      <div class="split rev">
+        <div>
+          <span class="sec-tag">Projekty</span>
+          <h2 class="sec-title">Budujemy<br>przyszłość roju</h2>
+          <p class="sec-desc">
+            Nasz pierwszy robot rojowy <strong style="color:var(--white)">SAIR v1</strong> jest w trakcie projektowania. Równolegle przygotowujemy prezentacje na <strong style="color:var(--white)">LEM Conference</strong> we Wrocławiu — pierwsze publiczne wystąpienie KN SWARM.
+          </p>
+          <br>
+          <a href="projekty.html" class="btn btn-outline" style="margin-top:8px;">Zobacz projekty &rarr;</a>
+        </div>
+        <div class="mini-grid">
+          <div class="mini-card fade-in">
+            <div class="icon">🐝</div>
+            <h3>SAIR v1</h3>
+            <p>Pierwszy robot rojowy — w trakcie projektowania modelu</p>
+          </div>
+          <div class="mini-card fade-in d1">
+            <div class="icon">🎤</div>
+            <h3>LEM Conference</h3>
+            <p>Prezentacje na temat przyszłości robotyki roju, Wrocław</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ DLA FIRM CTA ═══ -->
+  <section style="padding: 80px 28px;">
+    <div class="container">
+      <div class="cta-band fade-in">
+        <h2>Szukamy partnerów i sponsorów</h2>
+        <p>
+          Jesteśmy młodym, ambitnym kołem naukowym gotowym do współpracy z firmami technologicznymi. Oferujemy widoczność marki, kontakt z utalentowanymi studentami i wspólne projekty badawcze.
+        </p>
+        <div class="cta-buttons">
+          <a href="dla-firm.html" class="btn btn-primary">Nawiąż współpracę &rarr;</a>
+          <a href="kontakt.html"  class="btn btn-outline">Skontaktuj się</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-link" style="margin-bottom:0">
+            <img src="skn_swarm_logo.jpg" alt="KN SWARM" style="width:38px;height:38px;object-fit:contain;mix-blend-mode:screen;">
+            <span class="logo-name" style="font-size:1.05rem;">KN <em>SWARM</em></span>
+          </a>
+          <p>Studenckie koło naukowe zajmujące się robotyką roju. Politechnika Wrocławska.</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/company/skn-swarm/about/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/swarm_pwr/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Nawigacja</h4>
+          <ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="o-nas.html">O nas</a></li>
+            <li><a href="projekty.html">Projekty</a></li>
+            <li><a href="dla-firm.html">Dla firm</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Projekty</h4>
+          <ul>
+            <li><a href="projekty/sair-v1.html">SAIR v1</a></li>
+            <li><a href="projekty/lem-conference.html">LEM Conference</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a href="mailto:kontakt@knswarm.pl">kontakt@knswarm.pl</a></li>
+            <li><a href="https://www.linkedin.com/company/skn-swarm/about/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/swarm_pwr/" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024&ndash;2025 KN SWARM &middot; Politechnika Wrocławska</p>
+        <p>Zbudowane z <em>&hearts;</em> przez studentów PWr</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
