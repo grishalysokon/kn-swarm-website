@@ -185,6 +185,16 @@ footer {
 }
 #swarm-canvas { position: absolute; inset: 0; z-index: 0; }
 
+#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: none;
+}
+
 .hero-content {
   position: relative; z-index: 1;
   text-align: center; padding: 48px 24px;
@@ -379,6 +389,7 @@ section { padding: 80px 28px; }
 }
 .status-active { background: rgba(255,215,0,0.15); color: var(--yellow); }
 .status-upcoming { background: rgba(255,255,255,0.07); color: var(--text-muted); }
+.status-done { background: rgba(0,200,100,0.12); color: #00c864; }
 .project-body h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 600; color: var(--white); margin-bottom: 8px; }
 .project-body p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; }
 .project-footer {

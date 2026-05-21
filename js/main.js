@@ -53,7 +53,7 @@ if (canvas) {
   let mouse = { x: -9999, y: -9999 };
 
   /* Faza zbierania się wokół pszczółki */
-  const GATHER_DELAY    = 4500;  /* ms – swobodny lot przed zbieraniem */
+  const GATHER_DELAY    = 1500;  /* ms – swobodny lot przed zbieraniem */
   const GATHER_DURATION = 4500;  /* ms – czas przejścia */
   let startTs = null;
 

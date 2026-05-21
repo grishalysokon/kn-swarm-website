@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+  <canvas id="bg-canvas"></canvas>
 
   <header>
     <div class="header-inner">
@@ -44,7 +45,7 @@
       <span class="sep">/</span>
       <span>LEM Conference</span>
     </div>
-    <span class="project-status status-upcoming" style="margin-bottom:16px;display:inline-block;">Nadchodzące</span>
+    <span class="project-status status-done" style="margin-bottom:16px;display:inline-block;">Zakończone</span>
     <h1 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:700;color:var(--white);line-height:1.15;margin-bottom:16px;">
       LEM Conference<br><span style="color:var(--yellow);">Pierwsze wystąpienie<br>KN SWARM</span>
     </h1>
@@ -55,7 +56,7 @@
       <div class="meta-tag">🎤 <em>Prezentacje</em></div>
       <div class="meta-tag">📍 <em>Wrocław</em></div>
       <div class="meta-tag">🎓 <em>Konferencja studencka</em></div>
-      <div class="meta-tag">📅 <em>2025</em></div>
+      <div class="meta-tag">📅 <em>28–29.05.2026</em></div>
     </div>
   </div>
 
@@ -100,6 +101,17 @@
       <li>Zwiększenie rozpoznawalności KN SWARM na Politechnice Wrocławskiej</li>
       <li>Zainspirowanie innych studentów do dołączenia do koła</li>
     </ul>
+
+    <h2>Nasze prezentacje</h2>
+    <p>Obejrzyj nagranie z naszego wystąpienia na LEM Conference:</p>
+    <div style="margin: 24px 0; display: flex; flex-wrap: wrap; gap: 16px;">
+      <div style="width: calc(33.333% - 11px); min-width: 220px; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--yellow-border);">
+        <video controls style="width: 100%; display: block; background: #000;">
+          <source src="../LEM_NMPG.mp4" type="video/mp4">
+          Twoja przeglądarka nie obsługuje odtwarzania wideo.
+        </video>
+      </div>
+    </div>
 
     <h2>Chcesz nas posłuchać?</h2>
     <p>
@@ -157,12 +169,13 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024&ndash;2025 KN SWARM &middot; Politechnika Wrocławska</p>
+        <p>&copy; 2025&ndash;2028 KN SWARM &middot; Politechnika Wrocławska</p>
         <p>Zbudowane z <em>&hearts;</em> przez studentów PWr</p>
       </div>
     </div>
   </footer>
 
   <script src="../js/main.js"></script>
+  <script src="../js/particles-bg.js"></script>
 </body>
 </html>

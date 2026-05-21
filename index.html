@@ -10,7 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>   
+<body>
+  <canvas id="bg-canvas"></canvas>
 
   
   <!-- ═══ HEADER ═══ -->
@@ -100,20 +101,20 @@
   <div class="stats-bar">
     <div class="stats-inner">
       <div class="fade-in">
-        <div class="stat-num">2024</div>
+        <div class="stat-num">2026</div>
         <div class="stat-label">Rok założenia</div>
       </div>
       <div class="fade-in d1">
         <div class="stat-num">2</div>
-        <div class="stat-label">Aktywne projekty</div>
+        <div class="stat-label">Projekty</div>
       </div>
       <div class="fade-in d2">
-        <div class="stat-num">PWr</div>
-        <div class="stat-label">Politechnika Wrocławska</div>
+        <div class="stat-num">19</div>
+        <div class="stat-label">Członków</div>
       </div>
       <div class="fade-in d3">
-        <div class="stat-num">&infin;</div>
-        <div class="stat-label">Potencjał wzrostu</div>
+        <div class="stat-num">PWr</div>
+        <div class="stat-label">Politechnika Wrocławska</div>
       </div>
     </div>
   </div>
@@ -159,6 +160,40 @@
           <a href="dla-firm.html" class="btn btn-primary">Nawiąż współpracę &rarr;</a>
           <a href="kontakt.html"  class="btn btn-outline">Skontaktuj się</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ AUTORZY STRONY ═══ -->
+  <section style="padding: 60px 28px; background: var(--bg-card); border-top: 1px solid var(--yellow-border);">
+    <div class="container">
+      <span class="sec-tag">Za kulisami</span>
+      <h2 class="sec-title" style="margin-bottom: 40px;">Autorzy strony</h2>
+      <div style="display: flex; gap: 40px; flex-wrap: wrap;">
+
+        <!-- Claude Code -->
+        <div class="mini-card fade-in" style="flex: 1; min-width: 280px; text-align: left;">
+          <h3 style="color: var(--yellow); font-size: 1.2rem; margin-bottom: 12px;">Claude Code</h3>
+          <p style="color: var(--text-muted); font-size: 0.8rem; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.08em;">Współtwórca strony</p>
+          <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li style="display: flex; align-items: flex-start; gap: 8px;"><span style="color: var(--yellow); flex-shrink: 0;">▸</span> Zaprojektowanie i wykonanie całej strony internetowej KN SWARM</li>
+            <li style="display: flex; align-items: flex-start; gap: 8px;"><span style="color: var(--yellow); flex-shrink: 0;">▸</span> Stworzenie animacji roju (canvas) na hero section</li>
+            <li style="display: flex; align-items: flex-start; gap: 8px;"><span style="color: var(--yellow); flex-shrink: 0;">▸</span> Opracowanie kolorystyki i designu (czarno-biało-żółty motyw pszczeli)</li>
+            <li style="display: flex; align-items: flex-start; gap: 8px;"><span style="color: var(--yellow); flex-shrink: 0;">▸</span> Budowa wszystkich podstron: Strona główna, O nas, Projekty, Dla firm, Kontakt</li>
+            <li style="display: flex; align-items: flex-start; gap: 8px;"><span style="color: var(--yellow); flex-shrink: 0;">▸</span> Podstrony projektów: SAIR v1 oraz LEM Conference</li>
+            <li style="display: flex; align-items: flex-start; gap: 8px;"><span style="color: var(--yellow); flex-shrink: 0;">▸</span> Responsywność i hamburger menu na urządzenia mobilne</li>
+            <li style="display: flex; align-items: flex-start; gap: 8px;"><span style="color: var(--yellow); flex-shrink: 0;">▸</span> Animacje fade-in elementów przy scrollowaniu</li>
+            <li style="display: flex; align-items: flex-start; gap: 8px;"><span style="color: var(--yellow); flex-shrink: 0;">▸</span> Integracja z social media (LinkedIn, Instagram)</li>
+          </ul>
+        </div>
+
+        <!-- Jakub Pinoczek -->
+        <div class="mini-card fade-in d1" style="flex: 1; min-width: 280px; text-align: left;">
+          <h3 style="color: var(--yellow); font-size: 1.2rem; margin-bottom: 12px;">Jakub Pinoczek</h3>
+          <p style="color: var(--text-muted); font-size: 0.8rem; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.08em;">Współtwórca strony</p>
+          <img src="pino_robota.png" alt="Jakub Pinoczek" style="max-width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--yellow-border); margin-bottom: 14px;">
+        </div>
+
       </div>
     </div>
   </section>
@@ -209,12 +244,13 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024&ndash;2025 KN SWARM &middot; Politechnika Wrocławska</p>
+        <p>&copy; 2025&ndash;2028 KN SWARM &middot; Politechnika Wrocławska</p>
         <p>Zbudowane z <em>&hearts;</em> przez studentów PWr</p>
       </div>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/particles-bg.js"></script>
 </body>
 </html>

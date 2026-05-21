@@ -16,4 +16,4 @@ Tekst z naszego linkedina (do uzycia na stronie glownej lub o nas): Witamy w SWA
 
 Nasze motto: Gdzie ilość staje się jakością - w miejscu hero page pod glownym tytulem
 
-Social media do podlinkowania na stronie: https://www.linkedin.com/company/skn-swarm/about/ , https://www.instagram.com/swarm_pwr/
+Social media do podlinkowania na stronie: https://www.linkedin.com/company/skn-swarm/about/ , https://www.instagram.com/swarm_pwr/2
